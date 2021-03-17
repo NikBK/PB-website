@@ -1,0 +1,251 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Serif, sans-serif, Century Gothic, Helvetica, Garamond, Georgia;
+	/*background-color: #000;*/
+	color: #fff;
+	box-sizing: border-box;
+}
+
+
+/*HEADER SECTION*/
+
+header{
+	/*margin-top: 80px;*/
+	padding-top: 180px;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #000;
+}
+header h1{
+	color: #00ffff;
+	letter-spacing: 3px;
+	font-size: 60px;
+}
+.button{
+	/*width: 100px;*/
+	height: 30px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	cursor: pointer;
+}
+.button a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	/*overflow: hidden;*/
+}
+.button a span{
+	position: absolute;
+	display: block;
+}
+.button a span:nth-child(1){
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent,#00ffff);
+}
+.button:hover span:nth-child(1){
+	left: 100%;
+	transition: 0.5s;
+}
+.button a span:nth-child(2){
+	right: 0;
+	top: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent,#00ffff);
+}
+.button:hover span:nth-child(2){
+	top: 100%;
+	transition: 0.5s;
+	transition-delay: 0.1s;
+}
+.button a span:nth-child(3){
+	right: -100%;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent,#00ffff);
+}
+.button:hover span:nth-child(3){
+	right: 100%;
+	transition: 0.5s;
+	transition-delay: 0.2s;
+}
+.button a span:nth-child(4){
+	left: 0;
+	bottom: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent,#00ffff);
+}
+.button:hover span:nth-child(4){
+	bottom: 100%;
+	transition: 0.5s;
+	transition-delay: 0.3s;
+}
+.button:hover a{
+	background: #00ffff;
+	color: black;
+	transition-delay: 0.4s;
+}
+.button:hover{
+	box-shadow: 0 0 20px #00ffff;
+	transition-delay: 0.4s;
+}
+
+
+/*MENU SECTION*/
+
+.menu{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	margin: 10px;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid transparent;
+	position: relative;
+	background: transparent;
+	z-index: 1;
+	transition: 0.4s ease;
+}
+ul li a:hover{
+	color: #fff;
+	box-shadow: 0 0 15px #00ffff;
+}
+
+/*LOGO SECTION*/
+
+/*
+.logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	background-color: black;
+}
+.logo img{
+	width: 100%;
+}
+*/
+
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 200px;
+	background: transparent;
+}
+.logo div{
+	width: 2px;
+	height: 70px;
+	background: orange;
+	position: absolute;
+	margin: 0 auto;
+	display: inline-block;
+	transform-origin: 50% 50%;
+}
+.logo div:nth-child(1){
+	transform: rotateZ(30deg);
+}
+.logo div:nth-child(2){
+	transform: rotateZ(60deg);
+}
+.logo div:nth-child(3){
+	transform: rotateZ(90deg);
+}
+.logo div:nth-child(4){
+	transform: rotateZ(120deg);
+}
+.logo div:nth-child(5){
+	transform: rotateZ(150deg);
+}
+.logo div:nth-child(6){
+	transform: rotateZ(180deg);
+}
+
+.logo #small{
+	width: 2px;
+	height: 40px;
+	background: orange;
+	position: absolute;
+	margin: 15px auto;
+	display: inline-block;
+	transform-origin: 50% 50%;
+}
+.logo #small:nth-child(7){
+	transform: rotateZ(15deg);
+}
+.logo #small:nth-child(8){
+	transform: rotateZ(45deg);
+}
+.logo #small:nth-child(9){
+	transform: rotateZ(75deg);
+}
+.logo #small:nth-child(10){
+	transform: rotateZ(105deg);
+}
+.logo #small:nth-child(11){
+	transform: rotateZ(135deg);
+}
+.logo #small:nth-child(12){
+	transform: rotateZ(165deg);
+}
+
+.logo .text{
+	width: 100px;
+	text-align: initial;
+	position: relative;
+	top: 5px;
+	left: 20px;
+	line-height: 20px;
+	background: #000;
+}
+.text p{
+	color: #A9A9A9;
+}
+.text #photonics{
+	color: #4169E1;
+}
+
+
+/*Events section*/
+
+.event{
+	background: #000;
+}
+.events-swiper-container{
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	color: #00ffff;
+	padding-bottom: 50px;
+}
+.event h1{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	color: #00ffff;
+	font-size: 2em;
+}
+.swiper-wrapper{
+	height: 20rem;
+}
